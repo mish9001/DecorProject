@@ -1,0 +1,100 @@
+﻿@model LoginAndRegistration.Models.User
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Content/Site.css" rel="stylesheet" />
+<link href="~/content/bootstrap-theme.css" rel="stylesheet" />
+<link href="~/content/bootstrap-theme.min.css" rel="stylesheet" />
+<link href="~/content/bootstrap.css" rel="stylesheet" />
+<link href="~/content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/content/site.css" rel="stylesheet" />
+<a href="~/content/bootstrap-theme.css.map">~/content/bootstrap-theme.css.map</a>
+<a href="~/content/bootstrap-theme.min.css.map">~/content/bootstrap-theme.min.css.map</a>
+<a href="~/content/bootstrap.css.map">~/content/bootstrap.css.map</a>
+<a href="~/content/bootstrap.min.css.map">~/content/bootstrap.min.css.map</a>
+<h2>Details</h2>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.First_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.First_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Last_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Last_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date_Of_Birth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date_Of_Birth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User_Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User_Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Is_Email_Verified)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Is_Email_Verified)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Activation_Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Activation_Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Reset_Password_Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Reset_Password_Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role_ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role_ID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UserID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
